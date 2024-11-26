@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-pensamento',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './pensamento.component.html',
   styleUrl: './pensamento.component.css'
 })
