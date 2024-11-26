@@ -61,7 +61,8 @@
         </div>
         <div class="acoes">
             <button (click)="criarPensamento()" class="botao">Salvar</button>
-            <button (click)="cancelar()" class="botao">Cancelar</button>
+            <button [routerLink]="'/listarPensamento'" routerLinkActive="router-link-active"
+                class="botao">Cancelar</button>
         </div>
     </form>
 </section>
