@@ -10,15 +10,15 @@ import { PensamentoComponent } from "../pensamento/pensamento.component";
 })
 export class ListarPensamentosComponent {
   listaPensamentos = [
-    {
-      conteudo: 'tester',
-      autoria: 'teste',
-      modelo: 'modelo3'
-    },
-    {
-      conteudo: 'oioio',
-      autoria: 'fdfdf',
-      modelo: 'modelo1'
-    }
+    // {
+    //   conteudo: 'tester',
+    //   autoria: 'teste',
+    //   modelo: 'modelo3'
+    // },
+    // {
+    //   conteudo: 'oioio',
+    //   autoria: 'fdfdf',
+    //   modelo: 'modelo1'
+    // }
   ];
 }
