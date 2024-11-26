@@ -4,4 +4,9 @@
         <button [routerLink]="'/criarPensamento'" routerLinkActive="router-link-active" class="botao">Adicionar
             pensamento</button>
     </header>
+    <div class="mural">
+        @for (pensamento of listaPensamentos; track $index) {
+        <app-pensamento [pensamento]="pensamento"></app-pensamento>
+        }
+    </div>
 </section>
