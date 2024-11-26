@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Pensamento } from '../pensamento';
 import { PensamentoComponent } from "../pensamento/pensamento.component";
 
 @Component({
@@ -9,16 +10,5 @@ import { PensamentoComponent } from "../pensamento/pensamento.component";
   styleUrl: './listar-pensamentos.component.css'
 })
 export class ListarPensamentosComponent {
-  listaPensamentos = [
-    // {
-    //   conteudo: 'tester',
-    //   autoria: 'teste',
-    //   modelo: 'modelo3'
-    // },
-    // {
-    //   conteudo: 'oioio',
-    //   autoria: 'fdfdf',
-    //   modelo: 'modelo1'
-    // }
-  ];
+  listaPensamentos: Pensamento[] = [];
 }
