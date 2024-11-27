@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
@@ -8,7 +9,8 @@ import { PensamentoService } from '../pensamento.service';
   imports: [
     FormsModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   templateUrl: './criar-pensamento.component.html',
   styleUrl: './criar-pensamento.component.css'
@@ -36,6 +38,13 @@ export class CriarPensamentoComponent {
         this.router.navigate(['/listarPensamento']);
       });
     }
+  }
+
+  habilitarBotao(): string {
+    if(this.formulario.valid) {
+      return 'botao';
+    }
+    return 'botao__desabilitado';
   }
 
 
