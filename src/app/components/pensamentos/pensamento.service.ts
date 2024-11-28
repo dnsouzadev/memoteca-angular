@@ -38,4 +38,8 @@ export class PensamentoService {
   buscarPorId(id: number): Observable<Pensamento> {
     return this.http.get<Pensamento>(`${this.API}/${id}`);
   }
+
+  mudarFavorito(pensamento: Pensamento): Observable<Pensamento> {
+    return this.http.patch<Pensamento>(`${this.API}/${pensamento.id}`, { favorito: !pensamento.favorito });
+  }
 }

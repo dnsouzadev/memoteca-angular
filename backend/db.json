@@ -4,67 +4,78 @@
       "id": 1,
       "conteudo": "A vida é bela",
       "autoria": "Desconhecido",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 2,
       "conteudo": "O sucesso é a soma de pequenos esforços repetidos diariamente",
       "autoria": "Robert Collier",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "id": 3,
       "conteudo": "Acredite em si mesmo e todo o resto se encaixará",
       "autoria": "Desconhecido",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": 4,
       "conteudo": "A felicidade não está no fim da jornada, e sim em cada passo do caminho",
       "autoria": "Desconhecido",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 5,
       "conteudo": "Não há elevador para o sucesso, você tem que usar as escadas",
       "autoria": "Desconhecido",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "id": 6,
       "conteudo": "A persistência é o caminho do êxito",
       "autoria": "Charles Chaplin",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": 7,
       "conteudo": "O futuro depende do que fazemos no presente",
       "autoria": "Mahatma Gandhi",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 8,
       "conteudo": "A mente é tudo. O que você pensa, você se torna",
       "autoria": "Buda",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "id": 9,
       "conteudo": "Não espere. O momento nunca será perfeito",
       "autoria": "Napoleon Hill",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": 10,
       "conteudo": "pensamento de teste",
       "autoria": "eu mesmo",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": 11,
       "conteudo": "testando atualziado",
       "autoria": "atualiado",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     }
   ]
 }
