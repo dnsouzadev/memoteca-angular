@@ -5,7 +5,7 @@
                 (keyup)="pesquisarPensamentos()" />
             <img src="assets/imagens/lupa.png" alt="lupa azul">
         </div>
-        <h2 class="ff-inter">Meu Mural</h2>
+        <h2 class="ff-inter">{{ titulo }}</h2>
         <div class="botoes">
             <button class="botao" (click)="recarregarComponente()">
                 Meu Mural
@@ -13,12 +13,9 @@
             <button class="botao" (click)="listarFavoritos()">
                 Meus Favoritos
             </button>
-            <button class="botao">
-                Novo Pensamento
-            </button>
+            <button [routerLink]="'/criarPensamento'" routerLinkActive="router-link-active" class="botao">Adicionar
+                pensamento</button>
         </div>
-        <button [routerLink]="'/criarPensamento'" routerLinkActive="router-link-active" class="botao">Adicionar
-            pensamento</button>
     </header>
     @if (listaPensamentos.length > 0) {
     <div class="mural">
