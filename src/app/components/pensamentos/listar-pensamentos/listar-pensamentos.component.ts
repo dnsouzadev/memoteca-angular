@@ -14,10 +14,11 @@ import { PensamentoComponent } from "../pensamento/pensamento.component";
 })
 export class ListarPensamentosComponent {
   listaPensamentos: Pensamento[] = [];
+  paginaAtual: number = 1;
 
   constructor(private service: PensamentoService) {}
 
   ngOnInit(): void {
-    this.service.listar().subscribe(pensamentos => this.listaPensamentos = pensamentos);
+    this.service.listar(this.paginaAtual).subscribe(pensamentos => this.listaPensamentos = pensamentos);
   }
 }
