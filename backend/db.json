@@ -12,7 +12,7 @@
       "conteudo": "O sucesso é a soma de pequenos esforços repetidos diariamente",
       "autoria": "Robert Collier",
       "modelo": "modelo2",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 3,
@@ -26,7 +26,7 @@
       "conteudo": "A felicidade não está no fim da jornada, e sim em cada passo do caminho",
       "autoria": "Desconhecido",
       "modelo": "modelo1",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 5,
@@ -61,7 +61,7 @@
       "conteudo": "Não espere. O momento nunca será perfeito",
       "autoria": "Napoleon Hill",
       "modelo": "modelo3",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 10,

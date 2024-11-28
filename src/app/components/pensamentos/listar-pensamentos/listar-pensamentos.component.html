@@ -23,7 +23,7 @@
     @if (listaPensamentos.length > 0) {
     <div class="mural">
         @for (pensamento of listaPensamentos; track $index) {
-        <app-pensamento [pensamento]="pensamento"></app-pensamento>
+        <app-pensamento [pensamento]="pensamento" [listaFavoritos]="listaFavoritos"></app-pensamento>
         }
     </div>
     } @else {

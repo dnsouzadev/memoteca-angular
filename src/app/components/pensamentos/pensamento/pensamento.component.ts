@@ -12,6 +12,8 @@ import { PensamentoService } from '../pensamento.service';
 })
 export class PensamentoComponent {
 
+  @Input() listaFavoritos: Pensamento[] = [];
+
   constructor(
     private pensamentoService: PensamentoService
   ) { }
@@ -40,7 +42,14 @@ export class PensamentoComponent {
 
   atualizarFavorito(): void {
     this.pensamentoService.mudarFavorito(this.pensamento).subscribe({
-      next: (pensamento) => this.pensamento = pensamento
-    })
+      next: (pensamento) => {
+        this.pensamento = pensamento;
+        const index = this.listaFavoritos.findIndex(fav => fav.id === pensamento.id);
+        if (index > -1) {
+          this.listaFavoritos.splice(index, 1);
+        }
+      }
+    });
   }
+
 }
