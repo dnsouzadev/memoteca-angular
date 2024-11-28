@@ -39,6 +39,8 @@ export class PensamentoComponent {
   }
 
   atualizarFavorito(): void {
-    this.pensamentoService.mudarFavorito(this.pensamento).subscribe();
+    this.pensamentoService.mudarFavorito(this.pensamento).subscribe({
+      next: (pensamento) => this.pensamento = pensamento
+    })
   }
 }
